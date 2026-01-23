@@ -1,10 +1,15 @@
-function App() {
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import { LandingPage, ProjectsPage } from "../Features"
 
+function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+     <Router>
+        <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/projects" element={<ProjectsPage/>} />
+        </Routes>
+     </Router>
     </>
   )
 }
