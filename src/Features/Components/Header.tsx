@@ -19,16 +19,41 @@ const navLinks = [
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
 
+  const playBellSound = () => {
+  const audio: HTMLAudioElement = new Audio("/bell-sound.mp3")
+  audio.volume = 0.3
+  audio.play()
+};
+
+  const handleToggleTheme = () => {
+    toggleTheme()
+    playBellSound()
+  }
+
   return (
     <header className="sticky top-4 z-50 w-full">
       <div className="flex items-center justify-between rounded-xl px-3 py-2 shadow-sm backdrop-blur-md transition-all">
-        <Link to="/" className="flex items-center hover:opacity-80">
-          <img
-            src={profilePictureUrl}
-            alt="Profile"
-            className="h-16 w-16 rounded-xl object-cover border border-accent-foreground"
-          />
-        </Link>
+        <TooltipProvider delayDuration={0}>
+          <Tooltip>
+            <TooltipTrigger asChild>
+              <div className="flex items-center">
+                <img
+                  src={profilePictureUrl}
+                  alt="Profile"
+                  className="h-16 w-16 rounded-xl object-cover border border-accent-foreground"
+                />
+              </div>
+            </TooltipTrigger>
+            <TooltipContent side="left" sideOffset={8} className="rounded-full px-4 py-2 noto-sans-mono-regular flex items-center gap-2">
+              {/* Green dot with ping */}
+              <span className="relative flex h-3 w-3">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"/>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"/>
+              </span>
+              <p>Open to work</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
         <div className="flex items-center gap-0">
           <nav className="flex items-center gap-8 text-lg text-muted-foreground">
             {navLinks.map((link) => (
@@ -48,14 +73,14 @@ const Header = () => {
             <Tooltip>
               <TooltipTrigger asChild>
                 <button
-                  onClick={toggleTheme}
+                  onClick={handleToggleTheme}
                   className="flex h-10 w-10 items-center justify-center rounded-xl transition-colors hover:bg-muted-foreground/20 hover:border hover:border-accent-foreground"
                   aria-label="Toggle theme"
                 >
                   {theme === "dark" ? (<CiLight size={24} />) : (<CiDark size={24} />)}
                 </button>
               </TooltipTrigger>
-              <TooltipContent side="right" sideOffset={8} className="rounded-full px-4 py-2 text-sm noto-sans-mono-regular">
+              <TooltipContent side="right" sideOffset={8} className="rounded-full px-4 py-2 noto-sans-mono-regular">
                 <p>Toggle Theme</p>
               </TooltipContent>
             </Tooltip>

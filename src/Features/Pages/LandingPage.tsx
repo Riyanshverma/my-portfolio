@@ -1,19 +1,11 @@
 import { Button } from "@/Components/ui/button"
-import { ProfileBanner } from ".."
+import { ProfileBanner, Introduction } from ".."
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap-4 items-start">
+    <div className="flex flex-col gap-4">
       <ProfileBanner />
-      <div className="text-5xl text-center">
-        Hi I&apos;am Riyansh Verma
-      </div>
-      <p className="text-muted-foreground text-left max-w-xl">
-        This is where your main content goes. The header and footer are now handled by the Layout component.
-      </p>
-      <div>
-         <Button>Hello</Button>
-      </div>
+      <Introduction />
     </div>
   )
 }
