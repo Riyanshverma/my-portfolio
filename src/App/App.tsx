@@ -5,7 +5,6 @@ import { Layout } from "../Features"
 function App() {
   return (
      <Router>
-        {/* Wrap all routes in Layout */}
         <Layout>
           <Routes>
             <Route path="/" element={<LandingPage/>} />

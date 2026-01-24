@@ -6,8 +6,9 @@ export { LandingPage, ProjectsPage }
 
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
+import ProfileBanner from "./Components/ProfileBanner";
 
-export { Header, Footer }
+export { Header, Footer, ProfileBanner }
 
 
 import Layout from "./Layout/Layout";
