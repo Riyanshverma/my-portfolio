@@ -1,5 +1,5 @@
 import { Button } from "@/Components/ui/button"
-import { CiDark, CiLight } from "react-icons/ci";
+
 const LandingPage = () => {
   return (
     <div className="flex flex-col gap-4">
