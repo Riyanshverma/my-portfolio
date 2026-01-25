@@ -1,3 +1,3 @@
-import { profilePictureUrl, profileBannerUrl } from "./personal-info";
+import { profilePictureUrl, profileBannerUrl, resumeUrl } from "./personal-info";
 
-export { profilePictureUrl, profileBannerUrl }
+export { profilePictureUrl, profileBannerUrl, resumeUrl }

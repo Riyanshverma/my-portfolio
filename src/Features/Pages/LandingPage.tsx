@@ -1,9 +1,8 @@
-import { Button } from "@/Components/ui/button"
 import { ProfileBanner, Introduction } from ".."
 
 const LandingPage = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6">
       <ProfileBanner />
       <Introduction />
     </div>

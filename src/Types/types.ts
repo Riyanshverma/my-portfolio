@@ -1,4 +1,4 @@
-import { type ReactNode } from "react";
+import { type ReactNode, type ElementType } from "react";
 
 interface ReactNodeProp {
   children: ReactNode;
@@ -11,6 +11,13 @@ interface ThemeContextType {
   toggleTheme: () => void
 }
 
+interface TechBadgeProp {
+  icon: ElementType;
+  name: string;
+  color: string;
+  className?: string;
+}
 
 
-export type { ReactNodeProp, Theme, ThemeContextType }
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp }
