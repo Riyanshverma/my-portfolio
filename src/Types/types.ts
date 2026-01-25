@@ -18,6 +18,12 @@ interface TechBadgeProp {
   className?: string;
 }
 
+interface SocialBadgeProp {
+  icon: ElementType;
+  link: string;
+  label: string;
+}
 
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp }
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp }
