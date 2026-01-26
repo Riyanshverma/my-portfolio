@@ -1,17 +1,21 @@
-import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru } from "react-icons/si";
 import { TechBadge, SocialBadge } from "..";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
 import { socialInfo } from "@/Data";
+import { Button } from "@/Components/ui/button";
+import { Link } from "react-router-dom";
 
 const Introduction = () => {
   return (
     <div className="flex flex-col gap-6">
       <div className="w-full h-px bg-accent-foreground" />
+      
       <div className="flex flex-wrap items-baseline gap-3 text-5xl text-left text-accent-foreground">
         <span>A</span>
         <span className="text-accent-foreground/40 tracking-tight">Full Stack Developer</span>
         <span className="text-lg">from Jaipur, Rajasthan.</span>
       </div>
+
       <div className="text-lg text-accent-foreground/60 max-w-4xl leading-loose">
         I build interactive web apps using
         <TechBadge icon={SiTypescript} name="TypeScript" color="text-blue-500" />
@@ -27,6 +31,7 @@ const Introduction = () => {
         <TechBadge icon={SiPostgresql} name="PostgreSQL" color="text-blue-400" />
         . I focus on <span className="underline underline-offset-4">minimalist UI</span> design and am driven by a vision to create impactful solutions for the <span className="text-accent-foreground">Indian education system</span>.
       </div>
+
       <TooltipProvider delayDuration={0}>
         <div className="flex flex-wrap items-center justify-between mt-2">
           {socialInfo.map(({ link, icon: Icon, label }) => (
@@ -43,7 +48,28 @@ const Introduction = () => {
           ))}
         </div>
       </TooltipProvider>
-
+      
+      <div className="flex gap-6 mt-2">
+        <Button
+          variant="outline"
+          asChild
+          className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center gap-2"
+        >
+          <Link to="/resume">
+            <SiReaddotcv size={18} className="mr-1" />
+            Resume / CV
+          </Link>
+        </Button>
+        <Button
+          asChild
+          className="px-4 py-2 text-base hover:bg-accent-foreground/70 flex items-center gap-2"
+        >
+          <Link to="/contact">
+            <SiMaildotru size={18} className="mr-1" />
+            Get in touch
+          </Link>
+        </Button>
+      </div>
       
     </div>
   )
