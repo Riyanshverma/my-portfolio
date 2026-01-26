@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { LandingPage, ProjectsPage } from "../Features"
+import { LandingPage, ProjectsPage, ResumePage } from "../Features"
 import { Layout } from "../Features"
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
           <Routes>
             <Route path="/" element={<LandingPage/>} />
             <Route path="/projects" element={<ProjectsPage/>} />
+            <Route path="/resume" element={<ResumePage/>} />
           </Routes>
         </Layout>
      </Router>

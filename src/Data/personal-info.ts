@@ -2,6 +2,6 @@ const profilePictureUrl: string = "https://res.cloudinary.com/cloudywork/image/u
 
 const profileBannerUrl: string = "https://res.cloudinary.com/cloudywork/image/upload/v1769270261/yodo_ezlexy.png"
 
-const resumeUrl: string = "https://drive.google.com/file/d/1EvSux0i7vwUS5QvlBRzq3BPBbTGCZDw3/view?usp=sharing"
+const resumeUrl: string = "https://drive.google.com/file/d/1EvSux0i7vwUS5QvlBRzq3BPBbTGCZDw3/preview"
 
 export { profilePictureUrl, profileBannerUrl, resumeUrl }
