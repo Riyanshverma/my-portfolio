@@ -24,6 +24,10 @@ interface SocialBadgeProp {
   label: string;
 }
 
+interface ExperienceProp {
+  name: string
+}
 
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp }
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp }
