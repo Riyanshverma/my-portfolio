@@ -10,6 +10,7 @@ const ProfileBanner = () => {
           alt="Profile Banner"
           className="w-full h-full object-cover"
           draggable={false}
+          loading="lazy"
         />
       </ScratchToReveal>
       <p className="absolute top-3 right-4 z-10 text-sm text-white rounded-full underline underline-offset-4">

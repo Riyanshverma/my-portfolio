@@ -22,12 +22,19 @@ interface SocialBadgeProp {
   icon: ElementType;
   link: string;
   label: string;
+  size?: number;
+  className?: string;
 }
 
 interface ExperienceProp {
-  name: string
+  name: string;
+  companyLogo: string;
+  companySocial?: SocialBadgeProp[];
+  duration: string;
+  role: string;
+  location: string;
+  techNTools: TechBadgeProp[];
+  description: string[];
 }
-
-
 
 export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp }

@@ -3,7 +3,7 @@ import { SiLinkedin, SiInstagram, SiPeerlist, SiCodingninjas, SiGmail, SiCodeche
 import { SlSocialTwitter } from "react-icons/sl";
 
 const socialInfo: SocialBadgeProp[] = [
-    { link: "https://peerlist.io/riyanshverma", icon: SiPeerlist, label: "Peerlist" },
+  { link: "https://peerlist.io/riyanshverma", icon: SiPeerlist, label: "Peerlist" },
   { link: "https://www.naukri.com/code360/profile/riyanshverma01", icon: SiCodingninjas, label: "Coding Ninjas" },
   { link: "https://instagram.com/___riyansh___0106", icon: SiInstagram, label: "Instagram" },
   { link: "https://linkedin.com/in/riyansh-verma", icon: SiLinkedin, label: "LinkedIn" },

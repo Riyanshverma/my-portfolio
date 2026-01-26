@@ -41,6 +41,7 @@ const Header = () => {
                   src={profilePictureUrl}
                   alt="Profile"
                   className="h-16 w-16 rounded-xl object-cover border border-accent-foreground"
+                  loading="lazy"
                 />
               </div>
             </TooltipTrigger>
