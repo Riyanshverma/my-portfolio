@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { LandingPage, ProjectsPage, ResumePage } from "../Features"
+import { LandingPage, ProjectsPage, ResumePage, ContactPage } from "../Features"
 import { Layout } from "../Features"
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
             <Route path="/" element={<LandingPage/>} />
             <Route path="/projects" element={<ProjectsPage/>} />
             <Route path="/resume" element={<ResumePage/>} />
+            <Route path="/contact" element={<ContactPage/>} />
           </Routes>
         </Layout>
      </Router>

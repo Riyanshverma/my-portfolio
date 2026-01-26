@@ -6,7 +6,7 @@ const Layout = ({ children }: ReactNodeProp) => {
     <div className="flex min-h-screen w-full flex-col items-center bg-background noto-sans-mono-regular">
       <div className="relative flex min-h-screen w-full max-w-4xl flex-col px-4">
         <Header />
-        <main className="flex-1 w-full flex flex-col pt-8 pb-20">
+        <main className="flex-1 w-full flex flex-col py-8">
           {children}
         </main>
         <Footer />

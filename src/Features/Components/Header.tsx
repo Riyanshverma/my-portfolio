@@ -1,29 +1,17 @@
 import { Link } from "react-router-dom";
 import { CiDark, CiLight } from "react-icons/ci";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/Components/ui/tooltip";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
 import { useTheme } from "@/Hooks";
 import { profilePictureUrl } from "@/Data";
-
-const navLinks = [
-  { to: "/", label: "Portfolio" },
-  { to: "/projects", label: "Projects" },
-  { to: "/experience", label: "Experience" },
-  { to: "/journey", label: "Journey" },
-];
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
 
   const playBellSound = () => {
-  const audio: HTMLAudioElement = new Audio("/bell-sound.mp3")
-  audio.volume = 0.3
-  audio.play()
-};
+    const audio: HTMLAudioElement = new Audio("/bell-sound.mp3")
+    audio.volume = 0.3
+    audio.play()
+  };
 
   const handleToggleTheme = () => {
     toggleTheme()
@@ -48,8 +36,8 @@ const Header = () => {
             <TooltipContent side="left" sideOffset={8} className="rounded-full px-4 py-2 noto-sans-mono-regular flex items-center gap-2">
               {/* Green dot with ping */}
               <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"/>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"/>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
               </span>
               <p>Open to work</p>
             </TooltipContent>
@@ -57,7 +45,7 @@ const Header = () => {
         </TooltipProvider>
         <div className="flex items-center gap-0">
           <nav className="flex items-center gap-8 text-lg text-muted-foreground">
-            {navLinks.map((link) => (
+            {[{ to: "/", label: "Portfolio" }, { to: "/projects", label: "Projects" }, { to: "/journey", label: "Journey" }].map((link) => (
               <Link
                 key={link.to}
                 to={link.to}

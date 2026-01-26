@@ -4,10 +4,10 @@ import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/Comp
 
 const Experience = () => {
   return (
-    <section className="mt-12 flex flex-col gap-8">
+    <section className="mt-10 flex flex-col gap-8">
       <h2 className="text-4xl text-accent-foreground">Experience</h2>
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-8">
         {experienceInfo.map((exp) => (
           <article key={`${exp.name}-${exp.duration}`} className="flex flex-col gap-6">
             <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
