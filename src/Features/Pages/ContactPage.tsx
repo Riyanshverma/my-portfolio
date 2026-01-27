@@ -22,7 +22,7 @@ const ContactPage = () => {
   const onSubmit = async ({ name, email, message }: ContactFormProp) => {
     try {
       const { data }: AxiosResponse<ContactFormResponse> = await axios.post("https://api.web3forms.com/submit",{
-        access_key: "import.meta.env.VITE_MAIL_API_KEY",
+        access_key: import.meta.env.VITE_MAIL_API_KEY,
         name: name,
         email: email,
         message: message

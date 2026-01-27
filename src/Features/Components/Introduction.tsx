@@ -1,4 +1,4 @@
-import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru } from "react-icons/si";
+import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru, SiReact } from "react-icons/si";
 import { TechBadge, SocialBadge } from "..";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
 import { socialInfo } from "@/Data";
@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 const Introduction = () => {
   return (
-    <div className="flex flex-col gap-6">
+    <section className="flex flex-col gap-6">
       <div className="w-full h-px bg-accent-foreground" />
       
       <div className="flex flex-wrap items-baseline gap-3 text-5xl text-left text-accent-foreground">
@@ -18,6 +18,8 @@ const Introduction = () => {
 
       <div className="text-lg text-accent-foreground/60 max-w-4xl leading-loose">
         I build interactive web apps using
+        <TechBadge icon={SiReact} name="React" color="text-cyan-400" />
+        ,
         <TechBadge icon={SiTypescript} name="TypeScript" color="text-blue-500" />
         ,
         <TechBadge icon={SiJavascript} name="JavaScript" color="text-yellow-400" />
@@ -71,7 +73,7 @@ const Introduction = () => {
         </Button>
       </div>
       
-    </div>
+    </section>
   )
 }
 

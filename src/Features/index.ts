@@ -14,8 +14,9 @@ import TechBadge from "./Components/Badges/TechBadge";
 import SocialBadge from "./Components/Badges/SocialBadge";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
+import AboutMe from "./Components/AboutMe";
 
-export { Header, Footer, ProfileBanner, Introduction, TechBadge, SocialBadge, Experience, Projects }
+export { Header, Footer, ProfileBanner, Introduction, TechBadge, SocialBadge, Experience, Projects, AboutMe }
 
 
 import Layout from "./Layout/Layout";

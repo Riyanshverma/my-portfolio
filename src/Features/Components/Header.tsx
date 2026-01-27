@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { CiDark, CiLight } from "react-icons/ci";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
 import { useTheme } from "@/Hooks";
-import { profilePictureUrl } from "@/Data";
+import { profilePictureUrl1 } from "@/Data";
 
 const Header = () => {
   const { theme, toggleTheme } = useTheme()
@@ -26,7 +26,7 @@ const Header = () => {
             <TooltipTrigger asChild>
               <div className="flex items-center">
                 <img
-                  src={profilePictureUrl}
+                  src={profilePictureUrl1}
                   alt="Profile"
                   className="h-16 w-16 rounded-xl object-cover border border-accent-foreground"
                   loading="lazy"
