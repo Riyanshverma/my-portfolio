@@ -15,8 +15,9 @@ import SocialBadge from "./Components/Badges/SocialBadge";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import AboutMe from "./Components/AboutMe";
+import GitHubActivity from "./Components/GitHubActivity";
 
-export { Header, Footer, ProfileBanner, Introduction, TechBadge, SocialBadge, Experience, Projects, AboutMe }
+export { Header, Footer, ProfileBanner, Introduction, TechBadge, SocialBadge, Experience, Projects, AboutMe, GitHubActivity }
 
 
 import Layout from "./Layout/Layout";

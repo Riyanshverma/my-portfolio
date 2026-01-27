@@ -1,4 +1,4 @@
-import { ProfileBanner, Introduction, Experience, Projects, AboutMe } from ".."
+import { ProfileBanner, Introduction, Experience, Projects, AboutMe, GitHubActivity } from ".."
 
 const LandingPage = () => {
   return (
@@ -8,6 +8,7 @@ const LandingPage = () => {
       <Experience />
       <Projects />
       <AboutMe />
+      <GitHubActivity />
     </div>
   )
 }
