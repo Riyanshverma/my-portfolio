@@ -3,13 +3,14 @@ import { Button } from "@/Components/ui/button";
 import { Input } from "@/Components/ui/input";
 import { Label } from "@/Components/ui/label";
 import { Textarea } from "@/Components/ui/textarea";
+import { Spinner } from "@/Components/ui/spinner";
 import { SiMaildotru } from "react-icons/si";
-import { type ContactFormProp } from "@/Types/types";
+import { type ContactFormProp, type ContactFormResponse } from "@/Types/types";
 import axios, { type AxiosResponse } from "axios";
 import { toast } from "sonner";
 
 const ContactPage = () => {
-  const { register, handleSubmit, formState: { errors, isSubmitting, isSubmitSuccessful }} = useForm({
+  const { register, handleSubmit, formState: { errors, isSubmitting }, reset} = useForm({
     mode: "onChange",
     defaultValues: {
       name: "",
@@ -20,17 +21,23 @@ const ContactPage = () => {
 
   const onSubmit = async ({ name, email, message }: ContactFormProp) => {
     try {
-      const response: AxiosResponse = await axios.post("https://api.web3forms.com/submit",{
-        access_key: import.meta.env.VITE_MAIL_API_KEY,
+      const { data }: AxiosResponse<ContactFormResponse> = await axios.post("https://api.web3forms.com/submit",{
+        access_key: "import.meta.env.VITE_MAIL_API_KEY",
         name: name,
         email: email,
         message: message
       })
-      if(!response.data.success) {
-        throw new Error("Balli")
+      if(!data.success) {
+        throw new Error(data.message)
       }
+      reset()
+      toast.success(data.message)
     } catch(error) {
-      console.log("Talli");
+      if (axios.isAxiosError(error)) {
+        toast.error(error.response?.data?.message ?? error.message ?? "Network error.");
+      } else {
+        toast.error((error as Error)?.message ?? "Unknown error.");
+      }
     }
   };
 
@@ -103,8 +110,17 @@ const ContactPage = () => {
           )}
         </div>
         <Button type="submit" className="w-full md:w-auto px-4 py-2 text-base hover:bg-accent-foreground/70 flex items-center gap-2" disabled={isSubmitting}>
-          <SiMaildotru size={18} className="mr-1" />
-          Send Message
+          {isSubmitting ? (
+            <>
+              <Spinner className="w-6 h-6 mr-1" />
+              Sending...
+              </>
+          ) : (
+            <>
+              <SiMaildotru size={18} className="mr-1" />
+              Send Message
+            </>
+          )}
         </Button>
       </form>
     </div>

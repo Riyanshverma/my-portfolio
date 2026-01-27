@@ -43,4 +43,10 @@ interface ContactFormProp {
   message: string;
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp }
+interface ContactFormResponse {
+  success: boolean;
+  message: string;
+  data?: object
+}
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse }
