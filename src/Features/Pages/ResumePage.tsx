@@ -7,7 +7,7 @@ const ResumePage = () => {
       <div className="flex flex-wrap items-baseline gap-3 text-6xl text-left text-accent-foreground">
         <span className="tracking-tight">Resume</span>
         <span className="text-accent-foreground/60 text-lg">
-          Explore my journey and professional highlights.
+          View my professional resume.
         </span>
       </div>
       <div className="w-full h-px bg-accent-foreground" />

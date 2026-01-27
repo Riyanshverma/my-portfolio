@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import { LandingPage, ProjectsPage, ResumePage, ContactPage } from "../Features"
 import { Layout } from "../Features"
+import { Toaster } from "@/Components/ui/sonner"
 
 function App() {
   return (
@@ -13,6 +14,11 @@ function App() {
             <Route path="/contact" element={<ContactPage/>} />
           </Routes>
         </Layout>
+        <Toaster
+          position="bottom-right"
+          theme="dark"
+          richColors={true}
+        />
      </Router>
   )
 }

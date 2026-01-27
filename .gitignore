@@ -1,24 +1,107 @@
+# Node modules and build output
+node_modules/
+dist/
+build/
+dist-ssr/
+.temp/
+.cache/
+.next/
+out/
+coverage/
+*.tsbuildinfo
+
+# Vite
+.vite/
+*.local
+
 # Logs
-logs
+logs/
 *.log
 npm-debug.log*
 yarn-debug.log*
-yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# OS files
+.DS_Store
+Thumbs.db
 
 # Editor directories and files
-.vscode/*
+.vscode/
 !.vscode/extensions.json
-.idea
-.DS_Store
+.idea/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Test coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# Misc
+*.tgz
+*.gz
+*.zip
+*.bak
+*.tmp
+*.temp
+*.orig
+
+# Mac system files
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# npm
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# TypeScript
+*.tsbuildinfo
+
+# Storybook
+.storybook-out/
+out-storybook/
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# VSCode settings
+.vscode/*
+!.vscode/extensions.json
+
+# SASS cache
+.sass-cache/
+
+# Optional: ignore public/static build artifacts
+public/build/
+public/static/
+
+# Optional: ignore local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Optional: ignore screenshots
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# Optional: ignore Mac QuickLook
+*.qlgenerator
+
+# Optional: ignore React Native
+.expo/

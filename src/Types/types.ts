@@ -37,4 +37,10 @@ interface ExperienceProp {
   description: string[];
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp }
+interface ContactFormProp {
+  name: string;
+  email: string;
+  message: string;
+}
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp }
