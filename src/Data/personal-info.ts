@@ -31,7 +31,7 @@ const techStack: TechBadgeProp[] = [
   { icon: SiShadcnui, name: "shadcn/ui", color: "text-accent-foreground" },
   { icon: SiTailwindcss, name: "Tailwind", color: "text-sky-400" },
   { icon: SiTypescript, name: "TypeScript", color: "text-blue-500" },
-  // { icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
+  { icon: SiJavascript, name: "JavaScript", color: "text-yellow-400" },
   { icon: SiPostgresql, name: "PostgreSQL", color: "text-blue-400" },
   // { icon: SiBootstrap, name: "Bootstrap", color: "text-purple-700" },
 ];
