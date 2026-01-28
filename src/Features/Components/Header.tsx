@@ -19,7 +19,7 @@ const Header = () => {
   }
 
   return (
-    <header className="sticky top-4 z-50 w-full">
+    <header className="sticky top-0 z-50 w-full">
       <div className="flex items-center justify-between rounded-xl px-3 py-2 shadow-sm backdrop-blur-md transition-all">
         <TooltipProvider delayDuration={0}>
           <Tooltip>

@@ -49,4 +49,9 @@ interface ContactFormResponse {
   data?: object
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse }
+interface CurrentlyLearningProp {
+  title: string;
+  link: string
+}
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp }
