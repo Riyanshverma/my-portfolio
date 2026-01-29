@@ -7,7 +7,7 @@ import { Switch } from "@/Components/ui/switch"
 import { useState } from "react";
 
 const AboutMe = () => {
-  const [showSpotify, setShowSpotify] = useState(false);
+  const [showSpotify, setShowSpotify] = useState<boolean>(false);
   return (
     <section className="mt-10 flex flex-col gap-8">
       <h2 className="text-4xl text-accent-foreground">About Me</h2>
