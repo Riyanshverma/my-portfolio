@@ -45,15 +45,12 @@ const Header = () => {
         </TooltipProvider>
         <div className="flex items-center gap-0">
           <nav className="flex items-center gap-8 text-lg text-muted-foreground">
-            {[{ to: "/", label: "Portfolio" }, { to: "/projects", label: "Projects" }, { to: "/journey", label: "Journey" }].map((link) => (
-              <Link
-                key={link.to}
-                to={link.to}
-                className="hover:text-accent-foreground transition-colors"
-              >
-                {link.label}
-              </Link>
-            ))}
+            <Link
+              to="/"
+              className="hover:text-accent-foreground transition-colors"
+            >
+              Portfolio
+            </Link>
           </nav>
 
           <div className="w-px h-8 bg-accent-foreground mx-4" />

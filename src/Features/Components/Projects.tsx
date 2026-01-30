@@ -1,3 +1,6 @@
+import { projectsInfo } from "@/Data"
+
+
 const Projects = () => {
   return (
     <section className="mt-10 flex flex-col gap-8">

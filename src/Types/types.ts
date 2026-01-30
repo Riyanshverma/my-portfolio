@@ -54,4 +54,19 @@ interface CurrentlyLearningProp {
   link: string
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp }
+type Status = "Completed" | "In Development" | "Active" | "Inactive"
+
+interface ProjectProp {
+  name: string;
+  projectLogo: string;
+  description: string;
+  projectLinks: SocialBadgeProp[];
+  techStack: TechBadgeProp[];
+  status: Status;
+  timeLine: string;
+  role: string;
+  team: string;
+  features: string[];
+}
+
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp, ProjectProp }
