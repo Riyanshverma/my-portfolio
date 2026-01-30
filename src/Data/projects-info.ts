@@ -6,7 +6,7 @@ const projectsInfo: ProjectProp[] = [
   {
     name: "TurfOnTop",
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754930/turfontop_jqjtms.png",
-    description: "TurfOnTop is a full-stack turf booking platform for players and turf owners. Users can discover venues, check weather-aware availability, book slots in real time, and pay securely. Owners can list turfs, manage bookings/slots, and upload images & verification documents for smoother operations.",
+    description: "TurfOnTop is a turf booking platform where users can discover venues, check weather-aware availability, book slots in real time, and pay securely. Turf owners can list turfs, manage bookings and slots, and upload images and verification documents for smoother operations.",
     projectLinks: [
       { link: "https://turf-on-top.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/TurfOnTop", icon: SiGithub, label: "GitHub" },
@@ -30,6 +30,7 @@ const projectsInfo: ProjectProp[] = [
       { icon: SiFramer, name: "Framer Motion", color: "text-accent-foreground" },
     ],
     status: "Completed",
+    statusClassName: "",
     timeLine: "3 months",
     role: "Full-Stack Developer",
     team: "Solo",
@@ -45,7 +46,7 @@ const projectsInfo: ProjectProp[] = [
   {
     name: "Ryder",
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754927/ryder_igdwrs.png",
-    description: "Ryder is a full-stack car rental platform with two roles—Users and Owners. Users can discover cars with location-based filters, book rentals with real-time availability, and pay online. Owners can onboard their rental business, upload verification documents, manage fleet/availability/pricing, view bookings, and create offline bookings.",
+    description: "Ryder is a car rental platform that lets users easily find cars, book rentals with real-time availability, and pay online. Rental business owners can add and manage their fleet, set prices, view bookings, and handle offline reservations—all in one place.",
     projectLinks: [
       { link: "https://ryder-bice.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/ryder", icon: SiGithub, label: "GitHub" },
@@ -64,6 +65,7 @@ const projectsInfo: ProjectProp[] = [
       { icon: SiRazorpay, name: "Razorpay", color: "text-blue-900" },
     ],
     status: "Active",
+    statusClassName: "bg-green-200 text-green-600 dark:bg-green-700 dark:text-green-100",
     timeLine: "4 months",
     role: "Full-Stack Developer",
     team: "Solo",
@@ -79,8 +81,7 @@ const projectsInfo: ProjectProp[] = [
   {
     name: "Trajectory",
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754928/trajectory_hhreww.png",
-    description:
-      "Trajectory (Career Counselling System) is a full-stack platform that helps users explore career options using psychometric assessments (RIASEC + Big Five) and an AI career assistant. It combines data-driven insights with a RAG-based chat to generate personalized learning paths and opportunity roadmaps for smarter career decisions.",
+    description: "Trajectory is a career counselling system that helps users explore career options, assess their skills, and receive personalized guidance. By combining psychometric assessments and an AI assistant, it delivers tailored learning paths and career roadmaps to support smarter professional decisions.",
     projectLinks: [
       { link: "https://career-counselling-system.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/career-counselling-system", icon: SiGithub, label: "GitHub" },
@@ -104,6 +105,7 @@ const projectsInfo: ProjectProp[] = [
       { icon: SiOpenai, name: "OpenAI / OpenRouter", color: "text-accent-foreground" },
     ],
     status: "Active",
+    statusClassName: "bg-green-200 text-green-600 dark:bg-green-700 dark:text-green-100",
     timeLine: "5 months",
     role: "Full-Stack Developer",
     team: "Solo",

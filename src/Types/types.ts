@@ -54,7 +54,9 @@ interface CurrentlyLearningProp {
   link: string
 }
 
-type Status = "Completed" | "In Development" | "Active" | "Inactive"
+type Status = "Completed" | "In Development" | "Active" | "Inactive" 
+// In Development --> bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100
+// Inactive --> bg-red-200 text-red-600 dark:bg-red-700 dark:text-red-100
 
 interface ProjectProp {
   name: string;
@@ -63,6 +65,7 @@ interface ProjectProp {
   projectLinks: SocialBadgeProp[];
   techStack: TechBadgeProp[];
   status: Status;
+  statusClassName?: string;
   timeLine: string;
   role: string;
   team: string;
