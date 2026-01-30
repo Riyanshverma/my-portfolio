@@ -34,7 +34,6 @@ const Header = () => {
               </div>
             </TooltipTrigger>
             <TooltipContent side="left" sideOffset={8} className="rounded-full px-4 py-2 noto-sans-mono-regular flex items-center gap-2">
-              {/* Green dot with ping */}
               <span className="relative flex h-3 w-3">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
@@ -52,9 +51,7 @@ const Header = () => {
               Portfolio
             </Link>
           </nav>
-
           <div className="w-px h-8 bg-accent-foreground mx-4" />
-
           <TooltipProvider delayDuration={0}>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -71,7 +68,6 @@ const Header = () => {
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
-
         </div>
       </div>
     </header>

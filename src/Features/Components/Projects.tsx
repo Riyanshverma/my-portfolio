@@ -1,7 +1,9 @@
 import { projectsInfo } from "@/Data"
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from "@/Components/ui/tooltip";
-import { SocialBadge } from "..";
+import { SocialBadge, TechBadge } from "..";
 import { Badge } from "@/Components/ui/badge"
+import { Button } from "@/Components/ui/button";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   return (
@@ -52,12 +54,36 @@ const Projects = () => {
                 <p className="text-md text-accent-foreground/60 max-w-2xl line-clamp-3">
                   {project.description}
                 </p>
+                <div>
+                  <p className="text-lg text-accent-foreground">Technologies</p>
+                  <div className="flex flex-wrap">
+                    {project.techStack.slice(0, 4).map((t) => (
+                      <TechBadge
+                        key={t.name}
+                        icon={t.icon}
+                        name={t.name}
+                        color={t.color}
+                      />
+                    ))}
+                    <span className="ml-1 px-2 py-1 rounded-md bg-accent-foreground/10 font-medium text-accent-foreground text-sm translate-y-[3px]">
+                      +{project.techStack.length - 4}
+                    </span>
+                  </div>
+                </div>
               </div>
             </div>
             <div className="w-full h-px bg-accent-foreground" />
           </article>
         ))}
       </div>
+      <Button
+        variant="outline"
+        className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center mx-auto -mt-4"
+      >
+        <Link to="/projects">
+          View Details
+        </Link>
+      </Button>
     </section>
   )
 }

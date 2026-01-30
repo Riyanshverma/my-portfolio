@@ -1,8 +1,9 @@
 import LandingPage from "./Pages/LandingPage";
 import ResumePage from "./Pages/ResumePage";
 import ContactPage from "./Pages/ContactPage";
+import ProjectsPage from "./Pages/ProjectsPage";
 
-export { LandingPage, ResumePage, ContactPage }
+export { LandingPage, ResumePage, ContactPage, ProjectsPage }
 
 
 import Header from "./Components/Header";

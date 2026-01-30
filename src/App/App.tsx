@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import { LandingPage, ResumePage, ContactPage } from "../Features"
+import { LandingPage, ResumePage, ContactPage, ProjectsPage } from "../Features"
 import { Layout } from "../Features"
 import { Toaster } from "@/Components/ui/sonner"
 
@@ -11,6 +11,7 @@ function App() {
             <Route path="/" element={<LandingPage/>} />
             <Route path="/resume" element={<ResumePage/>} />
             <Route path="/contact" element={<ContactPage/>} />
+            <Route path="/projects" element={<ProjectsPage/>} />
           </Routes>
         </Layout>
         <Toaster

@@ -50,7 +50,6 @@ const Introduction = () => {
           ))}
         </div>
       </TooltipProvider>
-      
       <div className="flex gap-6 mt-2">
         <Button
           variant="outline"
@@ -72,7 +71,6 @@ const Introduction = () => {
           </Link>
         </Button>
       </div>
-      
     </section>
   )
 }
