@@ -9,8 +9,8 @@ const ResumePage = () => {
           View my professional resume.
         </span>
       </div>
-      <div className="w-full h-px bg-accent-foreground" />
-      <div className="w-full flex justify-center mt-3">
+      <div className="h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-accent-foreground/60 to-transparent" />
+      <div className="w-full flex justify-center mt-4">
         <iframe src={resumeUrl} width="600" height="750" allow="autoplay" className="rounded-lg" title="Resume PDF" loading="lazy"/>
       </div>
     </div>

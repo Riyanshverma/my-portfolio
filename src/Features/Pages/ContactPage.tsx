@@ -49,10 +49,10 @@ const ContactPage = () => {
           Get in touch with me.
         </span>
       </div>
-      <div className="w-full h-px bg-accent-foreground" />
+      <div className="h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-accent-foreground/60 to-transparent" />
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="space-y-6 max-w-3xl mx-auto w-full"
+        className="space-y-6 max-w-3xl mx-auto w-full mt-4"
       >
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col gap-2">

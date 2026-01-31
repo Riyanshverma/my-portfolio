@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const Introduction = () => {
   return (
     <section className="flex flex-col gap-6">
-      <div className="w-full h-px bg-accent-foreground" />
+      <div className="h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-accent-foreground/60 to-transparent" />
       
       <div className="flex flex-wrap items-baseline gap-3 text-5xl text-left text-accent-foreground">
         <span>A</span>
