@@ -1,6 +1,5 @@
 import { type TechBadgeProp, type CurrentlyLearningProp } from "@/Types/types"
-import { SiReact, SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiTailwindcss, SiNpm, SiPostgresql, SiCplusplus, SiShadcnui, SiRadixui, SiRedux, SiMysql, SiGit, SiPostman, SiBootstrap, SiPerplexity, SiClaude, SiOpenai, SiFastapi, SiRazorpay, SiSupabase, SiAppwrite, SiPython, SiGooglegemini } from "react-icons/si";
-
+import { SiReact, SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiTailwindcss, SiPostgresql, SiShadcnui, SiRedux, SiMysql, SiGit, SiPostman, SiPerplexity } from "react-icons/si";
 
 const profilePictureUrl1: string = "https://res.cloudinary.com/cloudywork/image/upload/v1769279475/IMG_0383_pyswgn.png"
 const profilePictureUrl2: string = "https://res.cloudinary.com/cloudywork/image/upload/v1769173439/Me_rvuttw.jpg"
