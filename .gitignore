@@ -94,7 +94,6 @@ public/static/
 *.db
 
 # Optional: ignore screenshots
-*.png
 *.jpg
 *.jpeg
 *.gif
