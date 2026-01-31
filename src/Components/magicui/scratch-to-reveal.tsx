@@ -21,15 +21,13 @@ export const ScratchToReveal: React.FC<ScratchToRevealProps> = ({
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    const ctx = canvas?.getContext("2d");
-    if (canvas && ctx) {
-      ctx.filter = "blur(128px)"; 
-      ctx.fillStyle = "rgba(0,0,0,1)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-      ctx.filter = "none";
-    }
-  }, [width, height]);
+  const canvas = canvasRef.current;
+  const ctx = canvas?.getContext("2d");
+  if (canvas && ctx) {
+    ctx.fillStyle = "rgba(0,0,0,1)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+  }
+}, [width, height]);
 
   useEffect(() => {
     const handleDocumentMouseMove = (event: MouseEvent) => {
