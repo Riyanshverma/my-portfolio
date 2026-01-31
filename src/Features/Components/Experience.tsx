@@ -1,5 +1,6 @@
 import { experienceInfo } from "@/Data";
-import { SocialBadge, TechBadge } from "..";
+import SocialBadge from "./Badges/SocialBadge";
+import TechBadge from "./Badges/TechBadge";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/Components/ui/tooltip";
 
 const Experience = () => {

@@ -3,7 +3,7 @@ import { SiGithub } from "react-icons/si"
 import { Button } from "@/Components/ui/button"
 import { projectsInfo } from "@/Data"
 import { Badge } from "@/Components/ui/badge"
-import { TechBadge } from ".."
+import TechBadge from "../Components/Badges/TechBadge";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react"
 import { cn } from "@/Lib/utils"

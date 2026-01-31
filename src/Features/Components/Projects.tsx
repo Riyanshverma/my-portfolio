@@ -1,6 +1,7 @@
 import { projectsInfo } from "@/Data"
 import { Tooltip, TooltipProvider, TooltipTrigger, TooltipContent } from "@/Components/ui/tooltip";
-import { SocialBadge, TechBadge } from "..";
+import SocialBadge from "./Badges/SocialBadge";
+import TechBadge from "./Badges/TechBadge";
 import { Badge } from "@/Components/ui/badge"
 import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";

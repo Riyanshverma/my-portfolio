@@ -1,4 +1,4 @@
-import { TechBadge } from "..";
+import TechBadge from "./Badges/TechBadge";
 import { profilePictureUrl2, techStack, currentlyLearning } from "@/Data";
 import { VscVscode } from "react-icons/vsc";
 import { SiApplemusic } from "react-icons/si";

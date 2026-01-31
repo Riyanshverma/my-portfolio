@@ -1,10 +1,13 @@
-import { Header, Footer } from ".."
+import Header from "../Components/Header";
+import Footer from "../Components/Footer";
+import ScrollToTop from "../Components/ScrollToTop";
 import { type ReactNodeProp } from "@/Types/types";
 
 const Layout = ({ children }: ReactNodeProp) => {
   return (
     <div className="flex min-h-screen w-full flex-col items-center bg-background noto-sans-mono-regular">
       <div className="relative flex min-h-screen w-full max-w-4xl flex-col px-4">
+        <ScrollToTop />
         <Header />
         <main className="flex-1 w-full flex flex-col py-8">
           {children}

@@ -1,5 +1,6 @@
 import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru, SiReact } from "react-icons/si";
-import { TechBadge, SocialBadge } from "..";
+import TechBadge from "./Badges/TechBadge";
+import SocialBadge from "./Badges/SocialBadge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
 import { socialInfo } from "@/Data";
 import { Button } from "@/Components/ui/button";
