@@ -46,7 +46,7 @@ const Header = () => {
           <nav className="flex items-center gap-8 text-lg text-muted-foreground">
             {[
               { to: "/", label: "Portfolio" },
-              { to: "/work", label: "Work" },
+              { to: "/experience", label: "Experience" },
               { to: "/projects", label: "Projects" },
               { to: "/resume", label: "Resume" },
             ].map((link) => (

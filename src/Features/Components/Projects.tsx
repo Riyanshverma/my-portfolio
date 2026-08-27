@@ -9,7 +9,7 @@ import { useMemo } from "react";
 
 const Projects = () => {
   const displayedProjects = useMemo(() => {
-    return [...projectsInfo].sort(() => 0.5 - Math.random()).slice(0, 3);
+    return [...projectsInfo].sort(() => 0.5 - Math.random()).slice(0, 2);
   }, []);
 
   return (

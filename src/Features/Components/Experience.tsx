@@ -1,6 +1,5 @@
 import { experienceInfo } from "@/Data";
 import SocialBadge from "./Badges/SocialBadge";
-import TechBadge from "./Badges/TechBadge";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/Components/ui/tooltip";
 import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";
@@ -10,7 +9,7 @@ const Experience = () => {
     <section className="mt-10 flex flex-col gap-8">
       <h2 className="text-4xl text-accent-foreground">Experience</h2>
       <div className="flex flex-col gap-8">
-        {experienceInfo.map((exp) => (
+        {experienceInfo.slice(0, 2).map((exp) => (
           <article key={`${exp.name}-${exp.duration}`} className="flex flex-col gap-6">
             <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
               <div className="flex items-start gap-4">
@@ -55,22 +54,8 @@ const Experience = () => {
                 <p>{exp.location}</p>
               </div>
             </div>
-            <div className="flex flex-col gap-2">
-              <p className="text-lg text-accent-foreground">Technologies & Tools</p>
-              <div className="flex flex-wrap gap-2">
-                {exp.techNTools.map((t) => (
-                  <TechBadge
-                    key={`${exp.name}-${t.name}`}
-                    icon={t.icon}
-                    name={t.name}
-                    color={t.color}
-                    className="mx-0 translate-y-0"
-                  />
-                ))}
-              </div>
-            </div>
             <ul className="ml-5 list-disc space-y-2 text-lg text-accent-foreground/60">
-              {exp.description.map((point, idx) => (
+              {exp.description.slice(0, 2).map((point, idx) => (
                 <li key={`${exp.name}-point-${idx}`}>{point}</li>
               ))}
             </ul>
@@ -83,7 +68,7 @@ const Experience = () => {
         asChild
         className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center mx-auto -mt-4"
       >
-        <Link to="/work">
+        <Link to="/experience">
           View More
         </Link>
       </Button>
