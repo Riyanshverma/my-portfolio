@@ -41,7 +41,7 @@ const ProjectsPage = () => {
                   </Button>
                 </div>
               </div>
-              {/* <Badge className={`${project.statusClassName} py-1 px-4`}>{project.status}</Badge> */}
+              <Badge className={`${project.statusClassName} py-1 px-4`}>{project.status}</Badge>
             </div>
             <div className="p-3 rounded-2xl bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-900 flex items-center justify-center w-full">
               <img

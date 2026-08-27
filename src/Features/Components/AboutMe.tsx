@@ -1,5 +1,5 @@
 import TechBadge from "./Badges/TechBadge";
-import { profilePictureUrl2, techStack, currentlyLearning } from "@/Data";
+import { profilePictureUrl3, techStack, currentlyLearning } from "@/Data";
 import { VscVscode } from "react-icons/vsc";
 import { SiApplemusic } from "react-icons/si";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/Components/ui/carousel";
@@ -14,7 +14,7 @@ const AboutMe = () => {
       <div className="flex flex-col md:flex-row gap-6 items-start">
         <div className="flex justify-center md:justify-start">
           <img
-            src={profilePictureUrl2}
+            src={profilePictureUrl3}
             alt="Profile"
             className="h-44 w-44 rounded-xl object-cover border border-accent-foreground"
             loading="lazy"

@@ -61,10 +61,13 @@ coverage/
 Icon?
 ._*
 
-# npm
+# npm & bun
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
+bun.lock
+bun.lockb
+bun-debug.log*
 
 # TypeScript
 *.tsbuildinfo
@@ -104,3 +107,10 @@ public/static/
 
 # Optional: ignore React Native
 .expo/
+
+# CodeGraph
+.codegraph/
+
+# Claude
+.claude/
+CLAUDE.md

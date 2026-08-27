@@ -5,6 +5,7 @@ import { Toaster } from "@/Components/ui/sonner";
 import { Spinner } from "@/Components/ui/spinner";
 
 const LandingPage = lazy(() => import("../Features/Pages/LandingPage"));
+const WorkPage = lazy(() => import("../Features/Pages/WorkPage"));
 const ResumePage = lazy(() => import("../Features/Pages/ResumePage"));
 const ContactPage = lazy(() => import("../Features/Pages/ContactPage"));
 const ProjectsPage = lazy(() => import("../Features/Pages/ProjectsPage"));
@@ -16,6 +17,7 @@ function App() {
         <Suspense fallback={<Spinner />}>
           <Routes>
             <Route path="/" element={<LandingPage />} />
+            <Route path="/work" element={<WorkPage />} />
             <Route path="/resume" element={<ResumePage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/projects" element={<ProjectsPage />} />

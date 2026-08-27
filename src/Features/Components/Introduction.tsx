@@ -1,4 +1,4 @@
-import { SiTypescript, SiJavascript, SiBun, SiNodedotjs, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru, SiReact } from "react-icons/si";
+import { SiTypescript, SiBun, SiExpress, SiPostgresql, SiReaddotcv, SiMaildotru, SiNextdotjs } from "react-icons/si";
 import TechBadge from "./Badges/TechBadge";
 import SocialBadge from "./Badges/SocialBadge";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/Components/ui/tooltip";
@@ -18,21 +18,17 @@ const Introduction = () => {
       </div>
 
       <div className="text-lg text-accent-foreground/60 max-w-4xl leading-loose">
-        I build interactive web apps using
-        <TechBadge icon={SiReact} name="React" color="text-cyan-400" />
+        I build modern web applications powered with AI using
+        <TechBadge icon={SiNextdotjs} name="Next.js" color="text-foreground" />
         ,
         <TechBadge icon={SiTypescript} name="TypeScript" color="text-blue-500" />
         ,
-        <TechBadge icon={SiJavascript} name="JavaScript" color="text-yellow-400" />
-        and
         <TechBadge icon={SiBun} name="Bun" color="text-orange-200" />
-        , powered by
-        <TechBadge icon={SiNodedotjs} name="Node.js" color="text-green-500" />
         ,
         <TechBadge icon={SiExpress} name="Express" color="text-foreground" />
         and
         <TechBadge icon={SiPostgresql} name="PostgreSQL" color="text-blue-400" />
-        . I focus on <span className="underline underline-offset-4">minimalist UI</span> design and am driven by a vision to create impactful solutions for the <span className="text-accent-foreground">Indian education system</span>.
+        . I focus on <span className="underline underline-offset-4">minimalist UI</span> design and am driven by a vision to build accessible technology that <span className="text-accent-foreground">empowers underprivileged communities and improves everyday livelihoods</span>.
       </div>
 
       <TooltipProvider delayDuration={0}>

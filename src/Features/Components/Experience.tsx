@@ -2,6 +2,8 @@ import { experienceInfo } from "@/Data";
 import SocialBadge from "./Badges/SocialBadge";
 import TechBadge from "./Badges/TechBadge";
 import { Tooltip, TooltipContent, TooltipTrigger, TooltipProvider } from "@/Components/ui/tooltip";
+import { Button } from "@/Components/ui/button";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   return (
@@ -76,6 +78,15 @@ const Experience = () => {
           </article>
         ))}
       </div>
+      <Button
+        variant="outline"
+        asChild
+        className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center mx-auto -mt-4"
+      >
+        <Link to="/work">
+          View More
+        </Link>
+      </Button>
     </section>
   );
 };

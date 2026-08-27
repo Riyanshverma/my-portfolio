@@ -4,31 +4,6 @@ import { SiLinkedin, SiReact, SiTypescript, SiTailwindcss, SiShadcnui, SiRadixui
 import { FaJava } from "react-icons/fa";
 
 const experienceInfo: ExperienceProp[] = [
-    {
-    name: "Aunwesha Knowledge Tech",
-    companyLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769414529/aunwesha_otm27c.png",
-    companySocial: [
-      { link: "https://www.aunwesha.com", icon: SlGlobe, label: "Website" },
-      { link: "https://www.linkedin.com/company/aunwesha-academy", icon: SiLinkedin, label: "LinkedIn" },
-    ],
-    duration: "May 2024 - Jun 2024",
-    role: "Data Visualization Intern",
-    location: "Kolkata, India (On-site)",
-    techNTools: [
-      { icon: SiTableau, name: "Tableau", color: "text-blue-500" },
-      { icon: SiKaggle, name: "Kaggle", color: "text-sky-400" },
-      { icon: SiMysql, name: "MySQL", color: "text-blue-700" },
-      { icon: FaJava, name: "Java", color: "text-orange-700" },
-      { icon: SiJquery, name: "jQuery", color: "text-blue-400" },
-      { icon: SiVega, name: "Vega-Lite", color: "text-pink-500" },
-    ],
-    description: [
-      "Analyzed datasets and created interactive dashboards using Tableau and Kaggle data.",
-      "Developed and generalized Java-based CRUD operations with MySQL and JDBC.",
-      "Built web apps for data visualization using SMILE libraries, Vega-Lite, and jQuery/AJAX.",
-      "Designed and implemented dashboards, bar/line/pie charts, and time-series visualizations.",
-    ],
-  },
   {
     name: "Dynamicore Strategies",
     companyLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769414530/dynamicore_xlayst.png",
@@ -54,6 +29,31 @@ const experienceInfo: ExperienceProp[] = [
       "Developed loan comparison, KYC integration, and interactive financial tools with a mobile-first, PWA-ready UI.",
       "Implemented gamified learning modules, AI-powered insights, and goal-based planning features.",
       "Ensured a seamless, responsive experience using shadcn/ui, Radix UI, and Tailwind CSS.",
+    ],
+  },
+  {
+    name: "Aunwesha Knowledge Tech",
+    companyLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769414529/aunwesha_otm27c.png",
+    companySocial: [
+      { link: "https://www.aunwesha.com", icon: SlGlobe, label: "Website" },
+      { link: "https://www.linkedin.com/company/aunwesha-academy", icon: SiLinkedin, label: "LinkedIn" },
+    ],
+    duration: "May 2024 - Jun 2024",
+    role: "Data Visualization Intern",
+    location: "Kolkata, India (On-site)",
+    techNTools: [
+      { icon: SiTableau, name: "Tableau", color: "text-blue-500" },
+      { icon: SiKaggle, name: "Kaggle", color: "text-sky-400" },
+      { icon: SiMysql, name: "MySQL", color: "text-blue-700" },
+      { icon: FaJava, name: "Java", color: "text-orange-700" },
+      { icon: SiJquery, name: "jQuery", color: "text-blue-400" },
+      { icon: SiVega, name: "Vega-Lite", color: "text-pink-500" },
+    ],
+    description: [
+      "Analyzed datasets and created interactive dashboards using Tableau and Kaggle data.",
+      "Developed and generalized Java-based CRUD operations with MySQL and JDBC.",
+      "Built web apps for data visualization using SMILE libraries, Vega-Lite, and jQuery/AJAX.",
+      "Designed and implemented dashboards, bar/line/pie charts, and time-series visualizations.",
     ],
   },
 ];

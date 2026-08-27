@@ -38,13 +38,18 @@ const Header = () => {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75" />
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500" />
               </span>
-              <p>Open to work</p>
+              <p>Let's Connect</p>
             </TooltipContent>
           </Tooltip>
         </TooltipProvider>
         <div className="flex items-center gap-0">
           <nav className="flex items-center gap-8 text-lg text-muted-foreground">
-            {[{ to: "/", label: "Portfolio" }, { to: "/projects", label: "Projects" }].map((link) => (
+            {[
+              { to: "/", label: "Portfolio" },
+              { to: "/work", label: "Work" },
+              { to: "/projects", label: "Projects" },
+              { to: "/resume", label: "Resume" },
+            ].map((link) => (
               <Link
                 key={link.to}
                 to={link.to}

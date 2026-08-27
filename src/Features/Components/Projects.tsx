@@ -79,6 +79,7 @@ const Projects = () => {
       </div>
       <Button
         variant="outline"
+        asChild
         className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center mx-auto -mt-4"
       >
         <Link to="/projects">
