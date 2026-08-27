@@ -1,5 +1,5 @@
 import { type TechBadgeProp, type CurrentlyLearningProp } from "@/Types/types";
-import { SiGit, SiGithub, SiHtml5, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiRedux, SiNodedotjs, SiBun, SiExpress, SiFastify, SiHono, SiPython, SiFastapi, SiLangchain, SiDocker, SiRedis, SiPostgresql, SiMysql, SiMongodb, SiPostman, SiCplusplus } from "react-icons/si";
+import { SiGit, SiGithub, SiHtml5, SiJavascript, SiTypescript, SiReact, SiNextdotjs, SiTailwindcss, SiRedux, SiNodedotjs, SiBun, SiExpress, SiFastify, SiHono, SiPython, SiFastapi, SiLangchain, SiDocker, SiRedis, SiPostgresql, SiMysql, SiMongodb, SiPostman, SiCplusplus, SiZod } from "react-icons/si";
 import { RiBearSmileFill } from "react-icons/ri";
 import { LuGitGraph, LuWorkflow, LuFeather } from "react-icons/lu";
 
@@ -38,6 +38,7 @@ const techStack: TechBadgeProp[] = [
   { icon: SiCplusplus, name: "C/C++", color: "text-blue-600" },
   { icon: SiTailwindcss, name: "Tailwind CSS", color: "text-sky-400" },
   { icon: SiBun, name: "Bun", color: "text-orange-200" },
+  { icon: SiZod, name: "Zod", color: "text-blue-500" },
 ];
 
 const currentlyLearning: CurrentlyLearningProp[] = [

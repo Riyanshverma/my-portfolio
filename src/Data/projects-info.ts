@@ -1,6 +1,8 @@
 import { type ProjectProp } from "@/Types/types";
 import { SlGlobe } from "react-icons/sl";
-import { SiGithub, SiNodedotjs, SiReact, SiExpress, SiPostgresql, SiTailwindcss, SiRazorpay, SiCloudinary, SiRedux, SiGooglecloud, SiJavascript, SiNpm, SiVite, SiRadixui, SiChartdotjs, SiFramer, SiShadcnui, SiSupabase, SiFastapi, SiPython, SiLangchain, SiOpenai } from "react-icons/si";
+import { RiBearSmileFill } from "react-icons/ri";
+import { LuFeather, LuBrain, LuSparkles } from "react-icons/lu";
+import { SiGithub, SiNodedotjs, SiReact, SiExpress, SiPostgresql, SiTailwindcss, SiRazorpay, SiCloudinary, SiRedux, SiGooglecloud, SiJavascript, SiNpm, SiVite, SiRadixui, SiChartdotjs, SiFramer, SiShadcnui, SiSupabase, SiFastapi, SiPython, SiLangchain, SiOpenai, SiBun, SiHono, SiTurborepo, SiFastify, SiSocketdotio, SiRedis, SiOllama, SiZod, SiNgrok, SiTwilio } from "react-icons/si";
 
 const projectsInfo: ProjectProp[] = [
   {
@@ -8,8 +10,8 @@ const projectsInfo: ProjectProp[] = [
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754930/turfontop_jqjtms.png",
     description: "TurfOnTop is a turf booking platform where users can discover venues, check weather-aware availability, book slots in real time, and pay securely. Turf owners can list turfs, manage bookings and slots, and upload images and verification documents for smoother operations.",
     projectLinks: [
-      { link: "https://turf-on-top.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/TurfOnTop", icon: SiGithub, label: "GitHub" },
+      { link: "https://turf-on-top.vercel.app", icon: SlGlobe, label: "Website" },
     ],
     techStack: [
       { icon: SiReact, name: "React", color: "text-cyan-400" },
@@ -48,8 +50,8 @@ const projectsInfo: ProjectProp[] = [
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754927/ryder_igdwrs.png",
     description: "Ryder is a car rental platform that lets users easily find cars, book rentals with real-time availability, and pay online. Rental business owners can add and manage their fleet, set prices, view bookings, and handle offline reservations—all in one place.",
     projectLinks: [
-      { link: "https://ryder-bice.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/ryder", icon: SiGithub, label: "GitHub" },
+      { link: "https://ryder-bice.vercel.app", icon: SlGlobe, label: "Website" },
     ],
     techStack: [
       { icon: SiReact, name: "React", color: "text-cyan-400" },
@@ -83,8 +85,8 @@ const projectsInfo: ProjectProp[] = [
     projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1769754928/trajectory_hhreww.png",
     description: "Trajectory is a career counselling system that helps users explore career options, assess their skills, and receive personalized guidance. By combining psychometric assessments and an AI assistant, it delivers tailored learning paths and career roadmaps to support smarter professional decisions.",
     projectLinks: [
-      { link: "https://career-counselling-system.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://github.com/Riyanshverma/career-counselling-system", icon: SiGithub, label: "GitHub" },
+      { link: "https://career-counselling-system.vercel.app", icon: SlGlobe, label: "Website" },
     ],
     techStack: [
       { icon: SiReact, name: "React", color: "text-cyan-400" },
@@ -99,9 +101,9 @@ const projectsInfo: ProjectProp[] = [
       { icon: SiRadixui, name: "Radix UI", color: "text-accent-foreground" },
       { icon: SiChartdotjs, name: "Chart.js", color: "text-pink-500" },
       { icon: SiVite, name: "Vite", color: "text-purple-500" },
-      { icon: SiFastapi, name: "FastAPI", color: "text-[#419285]" },
+      { icon: SiFastapi, name: "FastAPI", color: "text-teal-400" },
       { icon: SiPython, name: "Python", color: "text-yellow-400" },
-      { icon: SiLangchain, name: "LangChain", color: "text-accent-foreground" },
+      { icon: SiLangchain, name: "LangChain", color: "text-emerald-400" },
       { icon: SiOpenai, name: "OpenAI", color: "text-accent-foreground" },
     ],
     status: "Active",
@@ -110,12 +112,119 @@ const projectsInfo: ProjectProp[] = [
     role: "Full-Stack",
     team: "Solo",
     features: [
-      "Sign up/login and take RIASEC + Big Five assessments.",
+      "Take RIASEC + Big Five assessments.",
       "View results with charts and clear trait explanations.",
       "Get ranked job interests with fit percentages.",
       "Generate a personalized learning/career roadmap as a tree.",
       "Ask the AI assistant to fetch roadmaps instantly.",
       "Save assessment history and revisit recommendations anytime.",
+    ],
+  },
+  {
+    name: "4-in-a-row",
+    projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1787845325/4-in-a-row_ruzovp.png",
+    description: "4-in-a-row is a real-time multiplayer implementation of the classic game. Two players compete over WebSockets and if no opponent appears, a minimax bot takes their place. During matches, an AI assistant provides grounded advice based on engine evaluation.",
+    projectLinks: [
+      { link: "https://github.com/Riyanshverma/4-in-a-row", icon: SiGithub, label: "GitHub" },
+    ],
+    techStack: [
+      { icon: SiReact, name: "React", color: "text-cyan-400" },
+      { icon: RiBearSmileFill, name: "Zustand", color: "text-amber-600" },
+      { icon: SiVite, name: "Vite", color: "text-purple-500" },
+      { icon: SiTailwindcss, name: "Tailwind", color: "text-sky-400" },
+      { icon: SiTurborepo, name: "Turborepo", color: "text-pink-500" },
+      { icon: SiBun, name: "Bun", color: "text-orange-200" },
+      { icon: SiFastify, name: "Fastify", color: "text-foreground" },
+      { icon: SiSocketdotio, name: "Socket.io", color: "text-accent-foreground" },
+      { icon: SiPython, name: "Python", color: "text-yellow-400" },
+      { icon: SiFastapi, name: "FastAPI", color: "text-teal-400" },
+      { icon: SiRedis, name: "Redis", color: "text-red-500" },
+      { icon: SiSupabase, name: "Supabase", color: "text-green-500" },
+      { icon: SiOllama, name: "Ollama", color: "text-accent-foreground" },
+      { icon: SiShadcnui, name: "shadcn/ui", color: "text-accent-foreground" },
+      { icon: SiZod, name: "Zod", color: "text-blue-500" },
+    ],
+    status: "In Development",
+    statusClassName: "bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100",
+    timeLine: "On-going",
+    role: "Full-Stack",
+    team: "Solo",
+    features: [
+      "Matchmaking with fallback to a minimax AI bot after 60 seconds.",
+      "Real-time play over WebSockets with 30-second reconnect window.",
+      "AI assistant that explains the best move based on engine evaluation.",
+      "Pure TypeScript engine using bitboards and alpha-beta pruning.",
+      "Leaderboard and live game state stored in Redis, durable history in Postgres.",
+    ],
+  },
+  {
+    name: "LearnSphere",
+    projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1787845430/learn-sphere_hjhsri.png",
+    description: "LearnSphere is a comprehensive school management system designed with a multi-identity RBAC architecture. It handles everything from academic year scoping and attendance monitoring to result publishing and parent-teacher meetings, ensuring a seamless experience for students, teachers, parents, and admins.",
+    projectLinks: [
+      { link: "https://github.com/Riyanshverma/learn-sphere", icon: SiGithub, label: "GitHub" },
+    ],
+    techStack: [
+      { icon: SiReact, name: "React", color: "text-cyan-400" },
+      { icon: RiBearSmileFill, name: "Zustand", color: "text-amber-600" },
+      { icon: SiTailwindcss, name: "Tailwind", color: "text-sky-400" },
+      { icon: SiShadcnui, name: "shadcn/ui", color: "text-accent-foreground" },
+      { icon: SiFramer, name: "Framer Motion", color: "text-accent-foreground" },
+      { icon: SiVite, name: "Vite", color: "text-purple-500" },
+      { icon: SiBun, name: "Bun", color: "text-orange-200" },
+      { icon: LuFeather, name: "Elysia", color: "text-rose-400" },
+      { icon: SiSupabase, name: "Supabase", color: "text-green-500" },
+      { icon: SiZod, name: "Zod", color: "text-blue-500" },
+      { icon: SiRazorpay, name: "Razorpay", color: "text-blue-900" },
+      { icon: SiNgrok, name: "ngrok", color: "text-blue-500" },
+    ],
+    status: "In Development",
+    statusClassName: "bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100",
+    timeLine: "On-going",
+    role: "Full-Stack",
+    team: "Solo",
+    features: [
+      "Multi-identity RBAC system without duplicate accounts.",
+      "Academic year scoping for year-over-year data isolation.",
+      "Comprehensive attendance monitoring and alerting.",
+      "Detailed result publishing with historical term data.",
+      "Parent dashboard for tracking child's progress and meetings.",
+    ],
+  },
+  {
+    name: "Suvidha",
+    projectLogo: "https://res.cloudinary.com/cloudywork/image/upload/v1787845491/suvidha_rdzs9o.png",
+    description: "Suvidha is an advanced healthcare platform. It introduces features like a unified Health Passport for prescriptions and lab reports across hospitals, secure access grants, and race-condition free soft-lock slot booking for appointments.",
+    projectLinks: [
+      { link: "https://github.com/Riyanshverma/suvidha", icon: SiGithub, label: "GitHub" },
+    ],
+    techStack: [
+      { icon: SiReact, name: "React", color: "text-cyan-400" },
+      { icon: RiBearSmileFill, name: "Zustand", color: "text-amber-600" },
+      { icon: SiTailwindcss, name: "Tailwind", color: "text-sky-400" },
+      { icon: SiShadcnui, name: "shadcn/ui", color: "text-accent-foreground" },
+      { icon: SiFramer, name: "Framer Motion", color: "text-accent-foreground" },
+      { icon: SiVite, name: "Vite", color: "text-purple-500" },
+      { icon: SiHono, name: "Hono", color: "text-orange-500" },
+      { icon: SiBun, name: "Bun", color: "text-orange-200" },
+      { icon: SiSupabase, name: "Supabase", color: "text-green-500" },
+      { icon: SiZod, name: "Zod", color: "text-blue-500" },
+      { icon: LuBrain, name: "Sarvam AI", color: "text-amber-500" },
+      { icon: LuSparkles, name: "Grok", color: "text-accent-foreground" },
+      { icon: SiTwilio, name: "Twilio", color: "text-red-500" },
+      { icon: SiNgrok, name: "ngrok", color: "text-blue-500" },
+    ],
+    status: "In Development",
+    statusClassName: "bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100",
+    timeLine: "On-going",
+    role: "Full-Stack",
+    team: "Solo",
+    features: [
+      "Health Passport for unified view of patient records.",
+      "Patient-controlled access grants for doctors.",
+      "Soft-lock slot booking (3-minute hold) to prevent race conditions.",
+      "Auto slot generation on a rolling 31-day window.",
+      "Referral system with automatic access grant transfer.",
     ],
   },
 ];

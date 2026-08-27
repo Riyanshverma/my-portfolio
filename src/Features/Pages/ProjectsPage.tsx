@@ -27,14 +27,16 @@ const ProjectsPage = () => {
               <div className="flex flex-wrap items-center gap-3">
                 <h3 className="text-4xl text-accent-foreground">{project.name}</h3>
                 <div className="flex gap-2">
-                  <Button asChild variant="outline" className="flex items-center gap-2 px-2 py-0 border-accent-foreground/60 hover:bg-accent-foreground/10">
-                    <a href={project.projectLinks[0].link} target="_blank" rel="noopener noreferrer">
-                      <SlGlobe size={20} />
-                      Live Demo
-                    </a>
-                  </Button>
+                  {project.projectLinks.length === 2 && (
+                    <Button asChild variant="outline" className="flex items-center gap-2 px-2 py-0 border-accent-foreground/60 hover:bg-accent-foreground/10">
+                      <a href={project.projectLinks[1].link} target="_blank" rel="noopener noreferrer">
+                        <SlGlobe size={20} />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
                   <Button asChild className="flex items-center gap-2 px-2 hover:bg-accent-foreground/70">
-                    <a href={project.projectLinks[1].link} target="_blank" rel="noopener noreferrer">
+                    <a href={project.projectLinks[0].link} target="_blank" rel="noopener noreferrer">
                       <SiGithub size={20} />
                       Source Code
                     </a>

@@ -5,13 +5,18 @@ import TechBadge from "./Badges/TechBadge";
 import { Badge } from "@/Components/ui/badge"
 import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";
+import { useMemo } from "react";
 
 const Projects = () => {
+  const displayedProjects = useMemo(() => {
+    return [...projectsInfo].sort(() => 0.5 - Math.random()).slice(0, 3);
+  }, []);
+
   return (
     <section className="mt-10 flex flex-col gap-8">
       <h2 className="text-4xl text-accent-foreground">Projects</h2>
       <div className="flex flex-col gap-8">
-        {projectsInfo.map((project) => (
+        {displayedProjects.map((project) => (
           <article key={project.name} className="flex flex-col gap-6">
             <div className="flex flex-col md:flex-row gap-4 items-start">
               <div className="flex justify-center md:justify-start">
@@ -83,7 +88,7 @@ const Projects = () => {
         className="px-4 py-2 text-base border-accent-foreground/60 hover:bg-accent-foreground/10 flex items-center mx-auto -mt-4"
       >
         <Link to="/projects">
-          View Details
+          View More
         </Link>
       </Button>
     </section>
