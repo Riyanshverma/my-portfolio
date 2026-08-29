@@ -8,6 +8,7 @@ import { SiMaildotru } from "react-icons/si";
 import { type ContactFormProp, type ContactFormResponse } from "@/Types/types";
 import axios, { type AxiosResponse } from "axios";
 import { toast } from "sonner";
+import Seo from "../Components/Seo";
 
 const ContactPage = () => {
   const { register, handleSubmit, formState: { errors, isSubmitting }, reset} = useForm({
@@ -43,6 +44,11 @@ const ContactPage = () => {
 
   return (
     <div className="flex flex-col gap-6 mt-4">
+      <Seo
+        title="Contact | Riyansh Verma"
+        description="Get in touch with Riyansh Verma, Full Stack Developer, for collaborations, freelance projects, or job opportunities."
+        path="/contact"
+      />
       <div className="flex flex-wrap items-baseline gap-3 text-6xl text-left text-accent-foreground">
         <span className="tracking-tight">Contact</span>
         <span className="text-accent-foreground/60 text-lg">

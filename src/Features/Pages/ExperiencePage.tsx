@@ -2,10 +2,16 @@ import { Button } from "@/Components/ui/button";
 import { experienceInfo } from "@/Data";
 import TechBadge from "../Components/Badges/TechBadge";
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/Components/ui/hover-card";
+import Seo from "../Components/Seo";
 
 const ExperiencePage = () => {
   return (
     <div className="flex flex-col gap-6 mt-4">
+      <Seo
+        title="Experience | Riyansh Verma"
+        description="Professional work experience and career journey of Riyansh Verma, Full Stack Developer specializing in React, Node.js and AI-powered applications."
+        path="/experience"
+      />
       {/* Page Header */}
       <div className="flex flex-wrap items-baseline gap-3 text-6xl text-left text-accent-foreground">
         <span className="tracking-tight">Experience</span>

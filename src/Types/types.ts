@@ -54,6 +54,13 @@ interface CurrentlyLearningProp {
   link: string
 }
 
+interface SeoProp {
+  title: string;
+  description: string;
+  path?: string;
+  image?: string;
+}
+
 type Status = "Completed" | "In Development" | "Active" | "Inactive" 
 // In Development --> bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100
 // Inactive --> bg-red-200 text-red-600 dark:bg-red-700 dark:text-red-100
@@ -72,4 +79,4 @@ interface ProjectProp {
   features: string[];
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp, ProjectProp }
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp, ProjectProp, SeoProp }

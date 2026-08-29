@@ -8,11 +8,17 @@ import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react"
 import { cn } from "@/Lib/utils"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/Components/ui/hover-card";
+import Seo from "../Components/Seo";
 
 const ProjectsPage = () => {
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
   return (
     <div className="flex flex-col gap-6 mt-4">
+      <Seo
+        title="Projects | Riyansh Verma"
+        description="Explore full-stack and AI-powered projects built by Riyansh Verma, including TurfOnTop, Ryder, Trajectory and more, using React, Node.js and PostgreSQL."
+        path="/projects"
+      />
       <div className="flex flex-wrap items-baseline gap-3 text-6xl text-left text-accent-foreground">
         <span className="tracking-tight">Projects</span>
         <span className="text-accent-foreground/60 text-lg">

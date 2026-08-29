@@ -1,6 +1,7 @@
 import { Suspense, lazy } from "react";
 import { Spinner } from "@/Components/ui/spinner";
 import { LazyMount } from "@/Components/ui/lazy-mount";
+import Seo from "../Components/Seo";
 
 const ProfileBanner = lazy(() => import("../Components/ProfileBanner"));
 const Introduction = lazy(() => import("../Components/Introduction"));
@@ -12,6 +13,11 @@ const GitHubActivity = lazy(() => import("../Components/GitHubActivity"));
 const LandingPage = () => {
   return (
     <div className="flex flex-col gap-6">
+      <Seo
+        title="Riyansh Verma | Full Stack Developer"
+        description="Portfolio of Riyansh Verma, a Full Stack Developer from Jaipur, Rajasthan building modern, AI-powered web applications with React, Next.js, TypeScript, Node.js and PostgreSQL."
+        path="/"
+      />
       <Suspense fallback={<Spinner />}>
         <ProfileBanner />
       </Suspense>
