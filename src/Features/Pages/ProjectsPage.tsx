@@ -36,15 +36,17 @@ const ProjectsPage = () => {
                   {project.projectLinks.length === 2 && (
                     <Button asChild variant="outline" className="flex items-center gap-2 px-2 py-0 border-accent-foreground/60 hover:bg-accent-foreground/10">
                       <a href={project.projectLinks[1].link} target="_blank" rel="noopener noreferrer">
-                        <SlGlobe size={20} />
-                        Live Demo
+                        <SlGlobe size={20} className="hidden sm:inline" />
+                        <span className="sm:hidden">Live</span>
+                        <span className="hidden sm:inline">Live Demo</span>
                       </a>
                     </Button>
                   )}
                   <Button asChild className="flex items-center gap-2 px-2 hover:bg-accent-foreground/70">
                     <a href={project.projectLinks[0].link} target="_blank" rel="noopener noreferrer">
-                      <SiGithub size={20} />
-                      Source Code
+                      <SiGithub size={20} className="hidden sm:inline" />
+                      <span className="sm:hidden">Code</span>
+                      <span className="hidden sm:inline">Source Code</span>
                     </a>
                   </Button>
                 </div>
@@ -55,7 +57,7 @@ const ProjectsPage = () => {
               <img
                 src={project.projectLogo}
                 alt={`${project.name} logo`}
-                className="w-full h-72 rounded-xl object-cover"
+                className="w-full aspect-video md:h-72 md:aspect-auto rounded-xl object-cover"
                 loading="lazy"
               />
             </div>

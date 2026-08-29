@@ -11,25 +11,22 @@ const AboutMe = () => {
   return (
     <section className="mt-10 flex flex-col gap-8">
       <h2 className="text-4xl text-accent-foreground">About Me</h2>
-      <div className="flex flex-col md:flex-row gap-6 items-start">
-        <div className="flex justify-center md:justify-start">
-          <img
-            src={profilePictureUrl3}
-            alt="Profile"
-            className="h-44 w-44 rounded-xl object-cover border border-accent-foreground"
-            loading="lazy"
-          />
-        </div>
-        <div className="flex flex-col gap-2">
-          <h3 className="text-2xl text-accent-foreground">Riyansh Verma</h3>
-          <p className="text-lg text-accent-foreground/60 max-w-2xl">
-            I'm a full-stack web developer building real-world projects with a growing interest in software engineering. I work primarily with
-            <TechBadge icon={VscVscode} name="VS Code" color="text-blue-500" className="inline-flex mx-1" />
-            on macOS, enjoy
-            <TechBadge icon={SiApplemusic} name="Apple Music" color="text-red-500" className="inline-flex mx-1" />
-            while working and focus on creating practical solutions with clean, minimal design.
-          </p>
-        </div>
+      <div>
+        <img
+          src={profilePictureUrl3}
+          alt="Profile"
+          className="h-44 w-44 rounded-xl object-cover border border-accent-foreground float-left mr-6 mb-2"
+          loading="lazy"
+        />
+        <h3 className="text-2xl text-accent-foreground mb-2">Riyansh Verma</h3>
+        <p className="text-lg text-accent-foreground/60">
+          I'm a full-stack web developer building real-world projects with a growing interest in software engineering. I work primarily with
+          <TechBadge icon={VscVscode} name="VS Code" color="text-blue-500" className="inline-flex mx-1" />
+          on macOS, enjoy
+          <TechBadge icon={SiApplemusic} name="Apple Music" color="text-red-500" className="inline-flex mx-1" />
+          while working and focus on creating practical solutions with clean, minimal design.
+        </p>
+        <div className="clear-both" />
       </div>
       <div className="-translate-y-2">
         <p className="text-lg text-accent-foreground mb-2">Tech Stack</p>
@@ -40,8 +37,14 @@ const AboutMe = () => {
         </div>
       </div>
       <div className="-translate-y-2">
-        <p className="text-lg text-accent-foreground mb-2">Currently Learning</p>
         <Carousel className="w-full rounded-xl">
+          <div className="flex items-center justify-between mb-2">
+            <p className="text-lg text-accent-foreground">Currently Learning</p>
+            <div className="flex items-center gap-2">
+              <CarouselPrevious className="static translate-y-0 border border-accent-foreground" />
+              <CarouselNext className="static translate-y-0 border border-accent-foreground" />
+            </div>
+          </div>
           <CarouselContent>
             {currentlyLearning.map((item, idx) => (
               <CarouselItem key={idx}>
@@ -61,8 +64,6 @@ const AboutMe = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious className="border border-accent-foreground" />
-          <CarouselNext className="border border-accent-foreground" />
         </Carousel>
       </div>
       <div className="-translate-y-2">

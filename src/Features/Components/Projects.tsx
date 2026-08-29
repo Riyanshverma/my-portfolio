@@ -19,12 +19,12 @@ const Projects = () => {
         {displayedProjects.map((project) => (
           <article key={project.name} className="flex flex-col gap-6">
             <div className="flex flex-col md:flex-row gap-4 items-start">
-              <div className="flex justify-center md:justify-start">
-                <div className="p-1.5 rounded-2xl bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-900 flex items-center justify-center">
+              <div className="flex justify-center md:justify-start w-full md:w-auto">
+                <div className="p-1.5 rounded-2xl bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-900 flex items-center justify-center w-full md:w-80">
                   <img
                     src={project.projectLogo}
                     alt={`${project.name} logo`}
-                    className="w-80 rounded-xl object-cover"
+                    className="w-full aspect-video md:w-80 md:aspect-auto rounded-xl object-cover"
                     loading="lazy"
                   />
                 </div>
@@ -62,7 +62,7 @@ const Projects = () => {
                 </p>
                 <div>
                   <p className="text-lg text-accent-foreground">Technologies</p>
-                  <div className="flex flex-wrap">
+                  <div className="flex flex-wrap gap-2">
                     {project.techStack.slice(0, 4).map((t) => (
                       <TechBadge
                         key={t.name}
@@ -71,7 +71,7 @@ const Projects = () => {
                         color={t.color}
                       />
                     ))}
-                    <span className="ml-1 px-2 py-1 rounded-md bg-accent-foreground/10 font-medium text-accent-foreground text-sm translate-y-[3px]">
+                    <span className="mx-1 px-2 py-1 rounded-md bg-accent-foreground/10 font-medium text-accent-foreground text-sm translate-y-[3px]">
                       +{project.techStack.length - 4}
                     </span>
                   </div>

@@ -12,8 +12,11 @@ const Introduction = () => {
       <div className="h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-accent-foreground/60 to-transparent" />
       
       <div className="flex flex-wrap items-baseline gap-3 text-5xl text-left text-accent-foreground">
-        <span>A</span>
-        <span className="text-accent-foreground/40 tracking-tight">Full Stack Developer</span>
+        <span className="md:hidden">
+          A <span className="text-accent-foreground/40 tracking-tight">Full Stack Developer</span>
+        </span>
+        <span className="hidden md:inline">A</span>
+        <span className="hidden md:inline text-accent-foreground/40 tracking-tight">Full Stack Developer</span>
         <span className="text-lg">from Jaipur, Rajasthan.</span>
       </div>
 
@@ -32,11 +35,11 @@ const Introduction = () => {
       </div>
 
       <TooltipProvider delayDuration={0}>
-        <div className="flex flex-wrap items-center justify-between mt-2">
+        <div className="grid grid-cols-[repeat(auto-fill,minmax(3.5rem,1fr))] md:flex md:flex-wrap md:items-center md:justify-between gap-4 mt-2">
           {socialInfo.map(({ link, icon: Icon, label }) => (
             <Tooltip key={label}>
               <TooltipTrigger asChild>
-                <div>
+                <div className="flex justify-center md:block">
                   <SocialBadge icon={Icon} link={link} label={label}/>
                 </div>
               </TooltipTrigger>

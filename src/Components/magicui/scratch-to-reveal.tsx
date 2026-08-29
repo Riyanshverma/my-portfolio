@@ -79,11 +79,13 @@ export const ScratchToReveal: React.FC<ScratchToRevealProps> = ({
     const ctx = canvas?.getContext("2d");
     if (canvas && ctx) {
       const rect = canvas.getBoundingClientRect();
-      const x = clientX - rect.left;
-      const y = clientY - rect.top;
+      const scaleX = canvas.width / rect.width;
+      const scaleY = canvas.height / rect.height;
+      const x = (clientX - rect.left) * scaleX;
+      const y = (clientY - rect.top) * scaleY;
       ctx.globalCompositeOperation = "destination-out";
       ctx.beginPath();
-      ctx.arc(x, y, 30, 0, Math.PI * 2);
+      ctx.arc(x, y, 30 * Math.min(scaleX, scaleY), 0, Math.PI * 2);
       ctx.fill();
     }
   };
@@ -109,18 +111,12 @@ export const ScratchToReveal: React.FC<ScratchToRevealProps> = ({
   };
 
   return (
-    <div
-      className={cn("relative select-none", className)}
-      style={{
-        width,
-        height,
-      }}
-    >
+    <div className={cn("relative select-none w-full h-full", className)}>
       <canvas
         ref={canvasRef}
         width={width}
         height={height}
-        className="absolute left-0 top-0"
+        className="absolute left-0 top-0 w-full h-full"
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
       ></canvas>
