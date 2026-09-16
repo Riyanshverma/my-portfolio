@@ -20,7 +20,7 @@ const experienceInfo: ExperienceProp[] = [
       { link: "https://dynamico-invest-wise.vercel.app", icon: SlGlobe, label: "Website" },
       { link: "https://www.linkedin.com/company/dynamicore-strategies-private-limited", icon: SiLinkedin, label: "LinkedIn" },
     ],
-    duration: "May 2026 - Present",
+    duration: "May 2026 - Aug 2026",
     role: "Full Stack Developer Intern",
     location: "Rajasthan (Hybrid)",
     techNTools: [
