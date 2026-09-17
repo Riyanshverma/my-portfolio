@@ -6,7 +6,7 @@ import { Badge } from "@/Components/ui/badge"
 import TechBadge from "../Components/Badges/TechBadge";
 import { LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react"
-import { cn } from "@/Lib/utils"
+import { cn, statusClass } from "@/Lib/utils"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/Components/ui/hover-card";
 import Seo from "../Components/Seo";
 
@@ -51,7 +51,7 @@ const ProjectsPage = () => {
                   </Button>
                 </div>
               </div>
-              <Badge className={`${project.statusClassName} py-1 px-4`}>{project.status}</Badge>
+              <Badge className={cn(statusClass[project.status], "py-1 px-4")}>{project.status}</Badge>
             </div>
             <div className="p-3 rounded-2xl bg-gradient-to-br from-gray-200 via-gray-400 to-gray-600 dark:from-neutral-800 dark:via-neutral-700 dark:to-neutral-900 flex items-center justify-center w-full">
               <img
@@ -94,7 +94,7 @@ const ProjectsPage = () => {
               </div>
               <div className="flex flex-col mr-8">
                 <span className="text-accent-foreground/60">Status</span>
-                <Badge className={`${project.statusClassName}`}>{project.status}</Badge>
+                <Badge className={statusClass[project.status]}>{project.status}</Badge>
               </div>
             </div>
             <div>

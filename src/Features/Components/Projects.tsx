@@ -6,6 +6,7 @@ import { Badge } from "@/Components/ui/badge"
 import { Button } from "@/Components/ui/button";
 import { Link } from "react-router-dom";
 import { useMemo } from "react";
+import { statusClass } from "@/Lib/utils";
 
 const Projects = () => {
   const displayedProjects = useMemo(() => {
@@ -55,7 +56,7 @@ const Projects = () => {
                       </div>
                     </TooltipProvider>
                   </div>
-                  <Badge className={`${project.statusClassName}`}>{project.status}</Badge>
+                  <Badge className={statusClass[project.status]}>{project.status}</Badge>
                 </div>
                 <p className="text-md text-accent-foreground/60 max-w-2xl line-clamp-3">
                   {project.description}

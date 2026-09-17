@@ -7,7 +7,7 @@ const profilePictureUrl1: string = "https://res.cloudinary.com/cloudywork/image/
 const profilePictureUrl2: string = "https://res.cloudinary.com/cloudywork/image/upload/v1769173439/Me_rvuttw.jpg"
 const profilePictureUrl3: string = "https://res.cloudinary.com/cloudywork/image/upload/v1787831247/me_jfedru.png"
 const profileBannerUrl: string = "https://res.cloudinary.com/cloudywork/image/upload/v1769270261/yodo_ezlexy.png"
-const resumeUrl: string = "https://drive.google.com/file/d/1iBoIaMMa9dLyoLjBKW-0wU7PB71xE30q/preview"
+const resumeUrl: string = "/riyansh-verma-resume.pdf"
 
 const techStack: TechBadgeProp[] = [
   { icon: SiNextdotjs, name: "Next.js", color: "text-foreground" },

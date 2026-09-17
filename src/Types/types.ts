@@ -61,9 +61,7 @@ interface SeoProp {
   image?: string;
 }
 
-type Status = "Completed" | "In Development" | "Active" | "Inactive" 
-// In Development --> bg-blue-200 text-blue-600 dark:bg-blue-700 dark:text-blue-100
-// Inactive --> bg-red-200 text-red-600 dark:bg-red-700 dark:text-red-100
+type Status = "Completed" | "In Development" | "Active" | "Inactive"
 
 interface ProjectProp {
   name: string;
@@ -72,11 +70,10 @@ interface ProjectProp {
   projectLinks: SocialBadgeProp[];
   techStack: TechBadgeProp[];
   status: Status;
-  statusClassName?: string;
   timeLine: string;
   role: string;
   team: string;
   features: string[];
 }
 
-export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp, ProjectProp, SeoProp }
+export type { ReactNodeProp, Theme, ThemeContextType, TechBadgeProp, SocialBadgeProp, ExperienceProp, ContactFormProp, ContactFormResponse, CurrentlyLearningProp, ProjectProp, SeoProp, Status }
