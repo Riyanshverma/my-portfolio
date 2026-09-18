@@ -18,16 +18,16 @@ const ResumePage = () => {
       <div className="h-px w-full max-w-4xl bg-gradient-to-r from-transparent via-accent-foreground/60 to-transparent" />
       <div className="w-full max-w-4xl mx-auto mt-4 flex flex-col items-center gap-4">
         <object
-          data={resumeUrl}
+          data={`${resumeUrl}#toolbar=0&navpanes=0`}
           type="application/pdf"
           className="w-full h-[85vh] min-h-[420px] rounded-lg border border-accent-foreground/20"
           aria-label="Resume PDF"
         >
-          {/* Shown when the browser cannot render PDFs inline, e.g. mobile Safari */}
           <p className="p-6 text-center text-accent-foreground/60">
             Your browser can't display the PDF here.
           </p>
         </object>
+
         <a
           href={resumeUrl}
           download
