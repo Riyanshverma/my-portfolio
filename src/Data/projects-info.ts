@@ -1,7 +1,7 @@
 import { type ProjectProp } from "@/Types/types";
 import { SlGlobe } from "react-icons/sl";
 import { RiBearSmileFill } from "react-icons/ri";
-import { LuFeather, LuBrain, LuSparkles } from "react-icons/lu";
+import { LuBrain, LuSparkles } from "react-icons/lu";
 import { SiGithub, SiNodedotjs, SiReact, SiExpress, SiPostgresql, SiTailwindcss, SiRazorpay, SiCloudinary, SiRedux, SiGooglecloud, SiJavascript, SiNpm, SiVite, SiRadixui, SiChartdotjs, SiFramer, SiShadcnui, SiSupabase, SiFastapi, SiPython, SiLangchain, SiOpenai, SiBun, SiHono, SiTurborepo, SiFastify, SiSocketdotio, SiRedis, SiOllama, SiZod, SiNgrok, SiTwilio } from "react-icons/si";
 
 const projectsInfo: ProjectProp[] = [
