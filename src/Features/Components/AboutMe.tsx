@@ -29,7 +29,7 @@ const AboutMe = () => {
         <div className="clear-both" />
       </div>
       <div className="-translate-y-2">
-        <p className="text-lg text-accent-foreground mb-2">Tech Stack</p>
+        <p className="text-lg text-accent-foreground mb-2">Technical Skills</p>
         <div className="flex flex-wrap gap-2">
           {techStack.map((t) => (
             <TechBadge key={t.name} icon={t.icon} name={t.name} color={t.color} className="mx-0 translate-y-0" />
